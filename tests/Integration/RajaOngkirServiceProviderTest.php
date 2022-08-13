@@ -1,0 +1,46 @@
+<?php
+
+namespace Dzaki236\RajaOngkir\Tests\Integration;
+
+use Dzaki236\RajaOngkir\Exceptions\BasicHttpClientException;
+use Dzaki236\RajaOngkir\Exceptions\InvalidConfigurationException;
+use Dzaki236\RajaOngkir\Facades\RajaOngkir;
+
+class RajaOngkirServiceProviderTest extends TestCase
+{
+    /** @test */
+    public function it_has_config_file()
+    {
+        $this->assertTrue(is_array(config('rajaongkir')));
+    }
+
+    /** @test */
+    public function it_will_throw_an_exception_if_the_api_key_is_not_set()
+    {
+        $this->app['config']->set('rajaongkir.api_key', '');
+
+        $this->expectException(InvalidConfigurationException::class);
+
+        RajaOngkir::provinsi()->all();
+    }
+
+    /** @test */
+    public function it_will_throw_an_exception_if_the_api_key_is_incorrect()
+    {
+        $this->app['config']->set('rajaongkir.api_key', 'wrongapikey');
+
+        $this->expectException(BasicHttpClientException::class);
+
+        RajaOngkir::provinsi()->all();
+    }
+
+    /** @test */
+    public function it_will_throw_an_exception_if_the_package_is_incorrect()
+    {
+        $this->app['config']->set('rajaongkir.package', 'a');
+
+        $this->expectException(InvalidConfigurationException::class);
+
+        RajaOngkir::provinsi()->all();
+    }
+}
