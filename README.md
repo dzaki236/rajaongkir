@@ -1,4 +1,4 @@
-![Klien API RajaOngkir untuk PHP](https://rawcdn.githack.com/Dzaki236/rajaongkir/38bae45b88c98e94ecb20a460403e7484c6c2bb4/cover.png)
+
 
 # Klien API RajaOngkir untuk PHP
 
