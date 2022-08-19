@@ -260,19 +260,6 @@ Jalankan pengujian dengan perintah berikut.
 $ vendor/bin/phpunit
 ```
 
-## Log Perubahan
-
-Silakan membaca [log perubahan](CHANGELOG.md) untuk informasi lengkap.
-
-## Ingin berkontribusi?
-
-Silakan membaca [tata cara berkontribusi](CONTRIBUTING.md) untuk informasi lengkap.
-
-## Kontributor
-
--   [Ian Mustafa](https://github.com/ianmustafa)
--   [Seluruh Kontributor](https://github.com/Dzaki236/rajaongkir/contributors)
-
 ## Lisensi
 
 The MIT License (MIT). Silakan membaca [berkas lisensi](LICENSE) untuk informasi lengkap.
