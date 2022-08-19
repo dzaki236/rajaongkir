@@ -1,13 +1,4 @@
-
-
 # Klien API RajaOngkir untuk PHP
-
-[![Latest Version](https://img.shields.io/github/v/release/Dzaki236/rajaongkir?label=Release&sort=semver&style=flat-square)](https://github.com/Dzaki236/rajaongkir/releases)
-[![Packagist Version](https://img.shields.io/packagist/v/Dzaki236/rajaongkir?label=Packagist&style=flat-square)](https://packagist.org/packages/Dzaki236/rajaongkir)
-![PHP Version Required](https://img.shields.io/packagist/php-v/Dzaki236/rajaongkir?label=PHP%20Version&style=flat-square)
-[![MIT Licensed](https://img.shields.io/github/license/Dzaki236/rajaongkir?label=License&style=flat-square)](LICENSE)
-[![Build Status](https://img.shields.io/travis/Dzaki236/rajaongkir?label=Travis%20CI%20build&style=flat-square)](https://travis-ci.org/Dzaki236/rajaongkir)
-[![StyleCI](https://styleci.io/repos/212767959/shield)](https://styleci.io/repos/212767959)
 
 Paket pustaka PHP untuk mengakses API RajaOngkir dengan mudah.
 
